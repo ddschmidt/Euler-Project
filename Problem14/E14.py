@@ -26,7 +26,7 @@ def Collatz_term_fl(k):
 def main():
     start_num=0
     maxchain=0
-    for i in range(1,10**6+1):
+    for i in range(56,57):
         chain_len=0
         n=i
         while n!=1:
@@ -35,6 +35,6 @@ def main():
         if chain_len>maxchain:
             maxchain=chain_len
             start_num=i
-    return start_num
+    return (start_num,maxchain)
         
 print(main())
